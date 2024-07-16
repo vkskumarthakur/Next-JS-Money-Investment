@@ -6,13 +6,13 @@ const Header = () => {
     <div className='px-6 py-3 bg-white border-b-[1px] border-black'>
       <nav className='text-black flex items-center justify-between'>
         <div className='nav-logo'>
-          <p className='font-bold'>Dashboard</p>
+        <Link href='/'><p className='font-bold'>Dashboard</p></Link>
         </div>
         <div className='nav-menu flex items-center justify-between gap-5'>
           <ul className='flex justify-between items-center gap-3'>
          
             <li>
-              <Link href='#'>
+              <Link href='/'>
                 iUser
               </Link>
             </li>
