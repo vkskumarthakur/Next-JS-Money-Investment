@@ -4,11 +4,11 @@ import SideBar from './SideBar';
 
 const MainLayout = ({children}) => {
   return (
-   <main className='min-h-screen'>
+   <main className='rounded-3xl overflow-hidden' style={{minHeight:`calc(100vh - 40px)`}}>
    <Header/>
-   <div className="flex text-white max-w-[1440px] m-auto" style={{minHeight:`calc(100vh - 65px)`}}>
+   <div className="flex text-white" style={{minHeight:`calc(100vh - 65px)`}}>
    <SideBar/>
-   <div className="w-[80%] bg-gray-900">{children}</div>
+   <div className="flex-1 py-3 px-10 bg-black">{children}</div>
     </div>
    </main>  )
 }
