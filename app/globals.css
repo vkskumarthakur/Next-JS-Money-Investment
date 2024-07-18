@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* code for hiding scrollbar in dashboard section for small card */
+.dashboard-scard-container::-webkit-scrollbar{
+    display: none;
+
+}
+/* .dashboard-scard-container::-webkit-scrollbar-thumb{
+    background-color: red;
+    width: 10px;
+} */
