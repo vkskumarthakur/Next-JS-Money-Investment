@@ -47,7 +47,7 @@ export default function Profile() {
             <BsThreeDots className="text-gray-500" />
           </div>
           <div className="card-body flex items-start my-3 flex-col justify-between gap-1">
-            <div className="p-3 rounded-2xl text-black w-full bg-[#d2e0fa] font-semibold">Overreview</div>
+            <div className="p-3 rounded-2xl text-black w-full bg-[#d2e0fa] font-semibold">Overview</div>
             <div className="p-3 rounded-2xl text-black w-full bg-[#d1f2f9] font-semibold">Campaigns</div>
             <div className="p-3 rounded-2xl text-black w-full bg-[#d0f9e7] font-semibold">Adgroup</div>
             <div className="p-3 rounded-2xl text-black w-full bg-[#f7f9d2] font-semibold">Keyword</div>
