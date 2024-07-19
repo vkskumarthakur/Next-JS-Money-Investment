@@ -9,7 +9,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { BsArrowUp } from "react-icons/bs";
 
 
-export default function Profile() {
+export default function Dashboard() {
   return (
     <div className="" style={{ minHeight: `calc(100vh - 65px)` }}>
       <div className="dashboard-main">
@@ -50,7 +50,7 @@ export default function Profile() {
         {/* dashboard cards starts here */}
 
         <div className="dashboard-cards flex flex-col md:flex-row items-stretch justify-between gap-6 mt-5">
-          <div className="card bg-[#b9c1b6] p-5 flex-1 rounded-2xl">
+          <div className="card bg-[#b9c1b6] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3">
             <div className="card-title flex items-center justify-between">
               <p className="font-bold text-black text-lg">Summary</p>
               <BsThreeDots className="text-gray-500" />
@@ -70,7 +70,7 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div className="bg-[#b0d2c1] p-5 flex-1 rounded-2xl">
+          <div className="bg-[#b0d2c1] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3">
             <div className="card-title flex items-center justify-between">
               <p className="font-bold text-black text-lg">
                 Top 5 Products by spend
@@ -88,7 +88,7 @@ export default function Profile() {
               </div>
             </div>
           </div>
-          <div className="bg-[#b9b6c1] p-5 flex-1 rounded-2xl">
+          <div className="bg-[#b9b6c1] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3">
             <div className="card-title flex items-center justify-between">
               <p className="font-bold text-black text-lg">
                 Higest ACoS Campaigns
@@ -122,7 +122,7 @@ export default function Profile() {
         {/* small card carousel here */}
         <div className="dashboard-scard-container flex items-stretch justify-between gap-6 mt-5 overflow-x-auto">
         {DashboardSmallCardData.map((scardData,index)=>(
-          <div index = {scardData.id} className="small-card bg-[#26221f] p-5 flex-1 rounded-2xl min-w-[22%]">
+          <div index = {scardData.id} className="small-card bg-[#26221f] p-5 flex-1 rounded-2xl md:min-w-auto lg:min-w-[23%]">
           <div className="small-card-title flex items-center justify-between">
             <p className="font-semibold text-white text-base">{scardData.cardTitle}</p>
             <BsThreeDots className="text-gray-500" />

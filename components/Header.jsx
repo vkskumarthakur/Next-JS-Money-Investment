@@ -15,7 +15,7 @@ const Header = () => {
             <p className="font-bold">Dashboard</p>
           </Link>
         </div>
-        <div className="bg-[#26221f] flex items-center justify-start gap-2 py-2 px-4 rounded-full">
+        <div className="bg-[#26221f] flex items-center justify-start gap-2 py-2 px-4 rounded-full w-[80%]">
         <CiSearch className="text-xl" />
           <input type="text" className="bg-transparent outline-none" placeholder="Search for anything" />
         </div>
