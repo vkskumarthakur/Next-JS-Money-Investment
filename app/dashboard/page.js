@@ -7,6 +7,8 @@ import { TiFolderDelete } from "react-icons/ti";
 import { FiPlusSquare } from "react-icons/fi";
 import { BsThreeDots } from "react-icons/bs";
 import { BsArrowUp } from "react-icons/bs";
+import LineChart from "@/components/LineChart";
+import BarChart from "@/components/BarChart";
 
 
 export default function Dashboard() {
@@ -119,7 +121,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        {/* small card carousel here */}
+        {/* small card carousel starts here */}
         <div className="dashboard-scard-container flex items-stretch justify-between gap-6 mt-5 overflow-x-auto">
         {DashboardSmallCardData.map((scardData,index)=>(
           <div index = {scardData.id} className="small-card bg-[#26221f] p-5 flex-1 rounded-2xl md:min-w-auto lg:min-w-[23%]">
@@ -144,6 +146,33 @@ export default function Dashboard() {
         </div>
         ))}
         </div>
+                {/* small card carousel ends here */}
+
+        {/* card section three starts here */}
+        <div className="dashboard-cards flex flex-col md:flex-row items-stretch justify-between gap-6 mt-5">
+          <div className="card bg-[#f7f9d2] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3 hover:shadow-custom-shadow">
+            <div className="card-title flex items-center justify-between">
+              <p className="font-bold text-black text-lg">Costs</p>
+              <BsThreeDots className="text-gray-500" />
+            </div>
+            <div className="card-body">
+              <LineChart/>
+            </div>
+          </div>
+          <div className="bg-[#c4c2a9] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3 hover:shadow-custom-shadow">
+            <div className="card-title flex items-center justify-between">
+              <p className="font-bold text-black text-lg">
+                ACos vs Tacos
+              </p>
+              <BsThreeDots className="text-gray-500" />
+            </div>
+            <div className="card-body">
+             <BarChart/>
+              
+            </div>
+          </div>
+        </div>
+        {/* card section three ends here */}
       </div>
     </div>
   );
