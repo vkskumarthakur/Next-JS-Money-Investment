@@ -24,3 +24,36 @@ body::-webkit-scrollbar{
 .shadow-custom-shadow{
     box-shadow: rgba(252, 251, 251, 0.35) 0px 5px 15px;
 }
+.summary.card-body::-webkit-scrollbar{
+    width: 3px;
+}
+.summary.card-body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.highest-acos.card-body::-webkit-scrollbar{
+    width: 3px;
+}
+.highest-acos.card-body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.highest-acos.card-body::-webkit-scrollbar{
+    width: 3px;
+}
+
+.highest-acos.card-body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.top-products.card-body::-webkit-scrollbar{
+    width: 3px;
+}
+
+.top-products.card-body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+}
