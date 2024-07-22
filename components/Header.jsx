@@ -20,7 +20,7 @@ const Header = () => {
           <input type="text" className="bg-transparent outline-none" placeholder="Search for anything" />
         </div>
         <div className="nav-menu flex items-center justify-between gap-5">
-          <ul className="flex justify-between items-center gap-3">
+          <ul className="hidden md:flex justify-between items-center gap-3">
             <FiBell
               style={{ color: "#ffffff", fontSize: "20px" }}
               className="cursor-pointer"
@@ -29,7 +29,9 @@ const Header = () => {
               <Link href="/">iUser</Link>
             </li>
           </ul>
-          <div className="avatar w-10 h-10 p-2 bg-white rounded-full"></div>
+          <div className="avatar w-10 h-10  bg-black border-[1px]  rounded-full overflow-hidden">
+            <img src="https://avatars.githubusercontent.com/u/40897867?v=4" alt="vikas-image" className="h-full w-full"/>
+          </div>
         </div>
       </nav>
     </div>

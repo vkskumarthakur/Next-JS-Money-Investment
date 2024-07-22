@@ -75,21 +75,9 @@ export default function Dashboard() {
                 <span>Keyword</span>
                 <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d2e0fa] font-semibold flex items-center justify-between">
+              <div className="p-3 rounded-xl text-black w-full bg-[#d2e0fa] font-semibold flex items-center justify-between">
                 <span>Overview</span>
-                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
-              </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d1f2f9] font-semibold flex items-center justify-between">
-                <span>Campaigns</span>
-                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
-              </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d0f9e7] font-semibold flex items-center justify-between">
-                <span>Adgroup</span>
-                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
-              </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#f7f9d2] font-semibold flex items-center justify-between">
-                <span>Keyword</span>
-                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
+              <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
             </div>
           </div>
@@ -109,7 +97,7 @@ export default function Dashboard() {
               <div className="text-black w-full text-3xl font-bold">
                 <span className="text-center block text-black">2,985</span>
               </div>
-              <div className="mx-auto">
+              <div className="mx-auto h-52">
                 <DoughnutChart/>
               </div>
               </div>
@@ -192,7 +180,6 @@ export default function Dashboard() {
             </div>
             <div className="card-body">
              <BarChart/>
-              
             </div>
           </div>
         </div>
