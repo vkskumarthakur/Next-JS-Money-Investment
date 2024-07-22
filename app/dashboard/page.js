@@ -9,6 +9,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { BsArrowUp } from "react-icons/bs";
 import LineChart from "@/components/LineChart";
 import BarChart from "@/components/BarChart";
+import DoughnutChart from "@/components/DoughNutChart";
 
 
 export default function Dashboard() {
@@ -57,18 +58,38 @@ export default function Dashboard() {
               <p className="font-bold text-black text-lg">Summary</p>
               <BsThreeDots className="text-gray-500" />
             </div>
-            <div className="card-body flex items-start my-3 flex-col justify-between gap-1">
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d2e0fa] font-semibold">
-                Overview
+            <div className="summary card-body flex items-start my-3 flex-col justify-between gap-1 px-2 max-h-[370px] overflow-y-auto">
+              <div className="p-3 rounded-xl text-black w-full bg-[#d2e0fa] font-semibold flex items-center justify-between">
+                <span>Overview</span>
+              <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d1f2f9] font-semibold">
-                Campaigns
+              <div className="p-3 rounded-2xl text-black w-full bg-[#d1f2f9] font-semibold flex items-center justify-between">
+                <span>Campaigns</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#d0f9e7] font-semibold">
-                Adgroup
+              <div className="p-3 rounded-2xl text-black w-full bg-[#d0f9e7] font-semibold flex items-center justify-between">
+                <span>Adgroup</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
-              <div className="p-3 rounded-2xl text-black w-full bg-[#f7f9d2] font-semibold">
-                Keyword
+              <div className="p-3 rounded-2xl text-black w-full bg-[#f7f9d2] font-semibold flex items-center justify-between">
+                <span>Keyword</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
+              </div>
+              <div className="p-3 rounded-2xl text-black w-full bg-[#d2e0fa] font-semibold flex items-center justify-between">
+                <span>Overview</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
+              </div>
+              <div className="p-3 rounded-2xl text-black w-full bg-[#d1f2f9] font-semibold flex items-center justify-between">
+                <span>Campaigns</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
+              </div>
+              <div className="p-3 rounded-2xl text-black w-full bg-[#d0f9e7] font-semibold flex items-center justify-between">
+                <span>Adgroup</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
+              </div>
+              <div className="p-3 rounded-2xl text-black w-full bg-[#f7f9d2] font-semibold flex items-center justify-between">
+                <span>Keyword</span>
+                <div className="bg-[#B9C1B6] rounded-2xl px-2"><span className="font-light text-sm">140.16</span></div>
               </div>
             </div>
           </div>
@@ -79,7 +100,7 @@ export default function Dashboard() {
               </p>
               <BsThreeDots className="text-gray-500" />
             </div>
-            <div className="card-body flex items-start my-3 flex-col justify-between gap-1">
+            <div className="top-products card-body flex items-start my-3 flex-col justify-between gap-1 max-h-[370px] overflow-y-auto">
               <div className="w-full font-semibold">
                 <span className="text-center block text-gray-600">
                   Total Score
@@ -88,7 +109,10 @@ export default function Dashboard() {
               <div className="text-black w-full text-3xl font-bold">
                 <span className="text-center block text-black">2,985</span>
               </div>
-            </div>
+              <div className="mx-auto">
+                <DoughnutChart/>
+              </div>
+              </div>
           </div>
           <div className="bg-[#b9b6c1] p-5 flex-1 rounded-2xl transition ease-in-out duration-300 hover:-translate-y-3">
             <div className="card-title flex items-center justify-between">
@@ -97,7 +121,7 @@ export default function Dashboard() {
               </p>
               <BsThreeDots className="text-gray-500" />
             </div>
-            <div className="card-body my-3">
+            <div className="highest-acos card-body my-3 max-h-[370px] overflow-y-auto">
               <table className="table-auto w-full h-full border-spacing-1">
                 <thead className="font-normal text-[14px] text-left text-gray-600 mb-10">
                   <tr>

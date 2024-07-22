@@ -36,5 +36,40 @@ const DashBoardHigestACoSTableData = [
     sales: "₹149.50",
     acos: "₹160.48",
   },
+  {
+    id: 5,
+    campaign: "B08NY9N3MT",
+    spend: "₹30.25",
+    sales: "₹149.50",
+    acos: "₹160.48",
+  },
+  {
+    id: 5,
+    campaign: "B08NY9N3MT",
+    spend: "₹30.25",
+    sales: "₹149.50",
+    acos: "₹160.48",
+  },
+  {
+    id: 5,
+    campaign: "B08NY9N3MT",
+    spend: "₹30.25",
+    sales: "₹149.50",
+    acos: "₹160.48",
+  },
+  {
+    id: 5,
+    campaign: "B08NY9N3MT",
+    spend: "₹30.25",
+    sales: "₹149.50",
+    acos: "₹160.48",
+  },
+  {
+    id: 5,
+    campaign: "B08NY9N3MT",
+    spend: "₹30.25",
+    sales: "₹149.50",
+    acos: "₹160.48",
+  },
 ];
 export default DashBoardHigestACoSTableData;

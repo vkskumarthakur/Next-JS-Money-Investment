@@ -8,11 +8,11 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart = () => {
   const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
     datasets: [
       {
         label: '',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [65, 59, 80, 81, 56, 55, 40, 32, 56, 78, 48, 65],
         backgroundColor: '#ffd78f',
         borderColor: '#ffd78f',
         boererRadius: '14',
