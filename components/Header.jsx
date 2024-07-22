@@ -7,7 +7,7 @@ import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
-    <div className="px-6 py-3 bg-black">
+    <div className="px-6 py-3 bg-black fixed w-full top-0">
       <nav className="text-white flex items-center justify-between">
         <div className="nav-logo flex items-center justify-start gap-3">
           <FaIndianRupeeSign />
