@@ -121,7 +121,7 @@ export default function Dashboard() {
                 </thead>
                 <tbody>
                 {DashBoardHigestACoSTableData.map((data, index) => (
-                    <tr index={data.id} className="text-base">
+                    <tr key={data.id} className="text-base">
                       <td className="text-black font-semibold pt-3">{data.campaign}</td>
                       <td className="text-gray-600 pt-3">{data.spend}</td>
                       <td className="text-gray-600 pt-3">{data.sales}</td>
@@ -136,7 +136,7 @@ export default function Dashboard() {
         {/* small card carousel starts here */}
         <div className="dashboard-scard-container flex items-stretch justify-between gap-6 mt-5 overflow-x-auto">
         {DashboardSmallCardData.map((scardData,index)=>(
-          <div index = {scardData.id} className="small-card bg-[#26221f] p-5 flex-1 rounded-2xl md:min-w-auto lg:min-w-[23%]">
+          <div key = {scardData.id} className="small-card bg-[#26221f] p-5 flex-1 rounded-2xl md:min-w-auto lg:min-w-[23%]">
           <div className="small-card-title flex items-center justify-between">
             <p className="font-semibold text-white text-base">{scardData.cardTitle}</p>
             <BsThreeDots className="text-gray-500" />

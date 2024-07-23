@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FiBell } from "react-icons/fi";
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
-
 
 const Header = () => {
   return (
@@ -16,8 +16,12 @@ const Header = () => {
           </Link>
         </div>
         <div className="bg-[#26221f] flex items-center justify-start gap-2 py-2 px-4 rounded-full w-[80%]">
-        <CiSearch className="text-xl" />
-          <input type="text" className="bg-transparent outline-none" placeholder="Search for anything" />
+          <CiSearch className="text-xl" />
+          <input
+            type="text"
+            className="bg-transparent outline-none"
+            placeholder="Search for anything"
+          />
         </div>
         <div className="nav-menu flex items-center justify-between gap-5">
           <ul className="hidden md:flex justify-between items-center gap-3">
@@ -30,7 +34,13 @@ const Header = () => {
             </li>
           </ul>
           <div className="avatar w-10 h-10  bg-black border-[1px]  rounded-full overflow-hidden">
-            <img src="https://avatars.githubusercontent.com/u/40897867?v=4" alt="vikas-image" className="h-full w-full"/>
+            <Image
+              src="https://avatars.githubusercontent.com/u/40897867?v=4"
+              alt="vikas-image"
+              className="h-full w-full"
+              width={40}
+              height={40}
+            />
           </div>
         </div>
       </nav>
